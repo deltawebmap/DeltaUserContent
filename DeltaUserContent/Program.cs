@@ -22,13 +22,13 @@ namespace DeltaUserContent
 
         static void Main(string[] args)
         {
-            MainAsync().GetAwaiter().GetResult();
+            MainAsync(args).GetAwaiter().GetResult();
         }
 
-        public static async Task MainAsync()
+        public static async Task MainAsync(string[] args)
         {
             //Get config
-            config = Newtonsoft.Json.JsonConvert.DeserializeObject<ServiceConfig>(File.ReadAllText("config.json"));
+            config = Newtonsoft.Json.JsonConvert.DeserializeObject<ServiceConfig>(File.ReadAllText(args[0]));
 
             //Create adapters
             applications = new Dictionary<string, BaseAdapter>();

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DeltaUserContent": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\Roman\\Documents\\delta_dev\\backend\\usercontent\\config.json"
+    }
+  }
+}
